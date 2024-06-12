@@ -7,7 +7,7 @@
     <!-- CSP -->
     <meta http-equiv="Content-Security-Policy" content="
     default-src *;
-    img-src 'self' data: ; 
+    img-src 'self' https://webfornotes.github.io/index-css.png data: ; 
     script-src 'self' ;
     style-src  'self' 'unsafe-inline' ;
     object-src 'none' ; 
@@ -20,6 +20,9 @@
     </HEAD>
 
 <style>
+html{
+overflow-y:hidden;
+}
 body {
     Background-color:#9f8da3;
     background-repeat: no-repeat;
@@ -27,10 +30,14 @@ body {
     background-attachment: fixed;
     height:100vh;
 }
-div{
+div.string{
     border:2px solid green;
     Background-color:#A4A18F;
 } 
+div.img{
+text-align:center;
+opacity:0.2;
+}
 </style>
 
 <font size=5>數學 </font>- <font size=2><a href="https://webfornotes.github.io">(按此從回索引頁面) </a></font><br><br>
@@ -53,3 +60,4 @@ div{
    
 </p><br>
         </div>
+        <div class="img"><img src="https://webfornotes.github.io/index-css.png" draggable="false"/></div>
