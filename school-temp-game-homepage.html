@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <HTML lang=zh-hant >
+    <HEAD>
+    <meta charset="utf-8">
+    <meta name="viewpoint"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0  user-scalable=0"/>
+    <!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *;
+    img-src 'self' https://webfornotes.github.io/index-css.png https://img.alicdn.com/imgextra/i1/58729412/O1CN013eX5VJ2JOkNba6Qvt_!!58729412.jpg data: ; 
+    script-src 'self' ;
+    style-src  'self' 'unsafe-inline' ;
+    object-src 'none' ; 
+    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    <!-- /CSP -->
+    <TITLE>遊戲登入</TITLE>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
+    </HEAD>
+<style>
+    .img{width:60px;}
+    .img2{width:30px;}
+    
+Button{
+    border:2px solid black;
+    background-color:gray;
+}
+div.a{border:1px solid purple;
+    Background-color:Gray;}
+body {
+    Background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;} 
+div.b{
+    border:1px solid purple;
+    Background-color:#A4A18F;
+    summary{Background-color:gray}
+    }
+
+</style>
+   <BODY>
+       <div class="a"><h3><img class="img"src ="https://webfornotes.github.io/index-css.png">Card Vs - Mr Chan Tai Man</h3></div>
+       
+       <div class="b">
+           <br>
+           
+           <B>&ensp;&nbsp;<a href="" ><button><font color="red">帳戶等級</font>:2048</button></a> 
+       &emsp;
+       <B>&emsp;<a href="" ><button ><font color="red">餘額</font>0000000.13</button></a>
+       <br>
+       <br>
+       
+       <details>新手劍 <img class="img2" src="data:image/png;base64,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"/><br>
+       布衣 <img class="img2" src="https://img.alicdn.com/imgextra/i1/58729412/O1CN013eX5VJ2JOkNba6Qvt_!!58729412.jpg"/>
+       <summary>角色裝備</summary></details>
+       <br>
+       <details><font size=1>昨晚23時03分 - iphon15 pro (這是您的新裝置嗎？)<br>
+       前天15時30分 - honor x9b <br>
+       前前天09時01分 - honor x9b</font><summary>登入記錄</summary></details>
+       <br><br>
+       </div>
+   </BODY>
+   
+    
