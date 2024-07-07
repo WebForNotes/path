@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <HTML lang=zh-hant >
+    <HEAD>
+    <meta charset="utf-8">
+    <meta name="viewpoint"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0  user-scalable=0"/>
+    <!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *;
+    img-src 'self' https://webfornotes.github.io/index-css.png data: ; 
+    script-src 'self' ;
+    style-src  'self' 'unsafe-inline' ;
+    object-src 'none' ; 
+    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    <!-- /CSP -->
+    <TITLE>遊戲登入</TITLE>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
+    </HEAD>
+<style>
+    .img{width:60px;}
+    
+Button{
+    border:2px solid black;
+    background-color:gray;
+}
+
+body {
+    Background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;} 
+div.b{
+    border:1px solid purple;
+    Background-color:#A4A18F;
+    text-align:center ;
+    }
+div.a{border:1px solid purple;
+    Background-color:Gray;}
+</style>
+   <BODY>
+       <div class="a"><h3><img class="img"src ="https://webfornotes.github.io/index-css.png">Card Vs 帳戶登入</h3></div>
+       
+       <div class="b">
+       &emsp;<br>
+       <B>&emsp;<a href="" ><button class="a"><font color="red">登入名稱:</font>Mr Cheng Tai Man</font></button></a>
+      <B>&ensp;&nbsp;<a href="" ><button><font color="red">帳戶密碼:</font> 12345678&emsp;&nbsp;&emsp;&emsp;</button></a> 
+      <br><br>
+      <B>&ensp;&nbsp;<a href="https://WebForNotes.github.io/path/school-temp-game-homepage" ><button><font color="while">確定</font></button></a> 
+       </B><br>
+       &emsp;
+       </div>
+   </BODY>
+   
+    
