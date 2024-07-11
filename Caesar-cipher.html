@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <HTML lang=zh-hant >
+    <HEAD>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
+    <meta name="keyword"content="">
+    <meta name="robots"content="notranslate,noodp,noindex">
+    <!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *;
+    img-src 'self' https://webfornotes.github.io/index-css.png data: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zK4B996B8q2hsiKG.png  ; 
+    script-src 'self' ;
+    style-src  'self' 'unsafe-inline' ;
+    object-src 'none' ;
+    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    <!-- /CSP -->
+    <TITLE>ICT-SBA 位移加密法</TITLE>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
+    
+
+    </HEAD>
+
+<style>
+body {
+    Background-color:#9f8da3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+div.string{
+    border:2px solid green;
+    Background-color:#A4A18F;
+    Background-image:url(https://webfornotes.github.io/index-css.png);
+    Background-repeat:no-repeat;
+    Background-position:center;
+} 
+div.img{text-align:center;}
+img.img1{
+opacity:0.7;}
+img.img2{opacity:0.7;
+width:300px;}
+
+div.underline{text-align:center;
+border:1px solid black;}
+</style>
+
+<font size=5>ICT-SBA 位移加密法</font></font><br><br>
+
+<div class="string">
+    
+    <h3> &nbsp;位移加密法-Caesar cipher 是甚麼？</h3>
+
+    <p>&emsp;
+<B>1.<Font size=3>&ensp;<a href="https://zh.m.wikipedia.org/zh-hk/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">wikipedia</a> :(最後瀏覽日期2024/7/11) </Font></B>
+   <br>
+   <ul>
+       
+   <li>凱撒密碼（英語：Caesar cipher）是一種最簡單且最廣為人知的加密技術。凱撒密碼是一種替換加密技術，明文中的所有字母都在字母表上向前或向後，按照一個固定數目進行偏移後被替換成密文。<br><br>
+   舉例說明：當偏移量是3的時候，解密時的密鑰就是3，所有的字母A將被替換成D，B變成E，以此類推。<br><br><div class="img"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png"/></div><br>使用時，加密者查找明文字母表中需要加密的消息中的每一個字母所在位置，並且寫下密文字母表中對應的字母。需要解密的人則根據事先已知的密鑰反過來操作，就得到原來的明文。</li>
+   
+  </ul>
+</p>
+
+    <p>
+    &emsp;
+<B>2.<Font size=3>&ensp;<a href="https://aikawa0617.medium.com/%E5%AF%86%E7%A2%BC%E5%AD%B8-%E4%B8%80-%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A2%BC%E5%AD%B8-455e43038241">Medium</a> :(最後瀏覽日期2024/7/11) </Font></B>
+   <br>
+   <ul>
+       
+   <li>位移加密法非常容易破解，而且在實際應用中也無法保證通信安全。只須直接暴力破解或使用頻率分析。<br><br>
+   <div class="img"><img class="img2" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zK4B996B8q2hsiKG.png"/></div><br>
+   當密文長度夠大的情況下，分析密文中每個字母出現的頻率，然後將這一頻率與正常情況下的該語言字母表中所有字母的出現頻率做比較， 分析密文字母出現的頻率，可以估計出正確的偏移量。</li>
+   
+  </ul>
+</p>
+
+<div class="underline"></div>
+<h3> &nbsp;位移加密法 所涉及的ICT相關理論:</h3>
+
+<p>
+    &emsp;
+<B><Font size=3>&ensp;字符編碼 ASCII</Font>:</B>
+   <br>
+   <ul>
+   <li>位移加密法在進行加密中，會先將英文字母轉換成美國標準資訊交換碼ASCII，</li>
+  </ul>
+    &emsp;
+  <B><Font size=3>&ensp;數據加密</Font>:</B>
+   <br>
+   <ul>
+   <li></li>
+  </ul>
+  
+  
+</p>
+
+
+
+
+
+</div>
