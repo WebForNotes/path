@@ -28,6 +28,9 @@ body {
     background-attachment: fixed;
     height:100vh;
 }
+
+div.title{text-align:center;}
+
 div.string{
     border:2px solid green;
     Background-color:#A4A18F;
@@ -36,66 +39,103 @@ div.string{
     Background-position:center;
 } 
 div.img{text-align:center;}
+
+div.imghref{width:50px}
+
 img.img1{
 opacity:0.7;}
+
+img.imghref{width:37px;}
+
 img.img2{opacity:0.7;
 width:300px;}
 
 div.underline{text-align:center;
-border:1px solid black;}
+border:1px solid green;}
+
+div.underline-P{text-align:center;
+border:1.1px solid purple;}
+
 </style>
 
-<font size=5>ICT-SBA 位移加密法</font></font><br><br>
+<div class="imghref"><a href="https://webfornotes.github.io"><img src="https://webfornotes.github.io/index-css.png" class="imghref"draggable="false"alt="（IMG-返回索引頁連結）"/></a></div>
+<div class="title"><B><U><font size=5>位移加密法 Caesar cipher</font></B></U></div><br><br>
+
 
 <div class="string">
     
-    <h3> &nbsp;位移加密法-Caesar cipher 是甚麼？</h3>
+    <h3>&ensp;What is Caesar cipher?</h3>
 
-    <p>&emsp;
-<B>1.<Font size=3>&ensp;<a href="https://zh.m.wikipedia.org/zh-hk/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">wikipedia</a> :(最後瀏覽日期2024/7/11) </Font></B>
-   <br>
+    <p><ol>
+<B><li><Font size=3><a href="https://zh.m.wikipedia.org/zh-hk/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">wikipedia</a> :(最後瀏覽日期2024/7/11) </Font></B>  </li> <br> <u>
+  
+  
    <ul>
        
    <li>凱撒密碼（英語：Caesar cipher）是一種最簡單且最廣為人知的加密技術。凱撒密碼是一種替換加密技術，明文中的所有字母都在字母表上向前或向後，按照一個固定數目進行偏移後被替換成密文。<br><br>
-   舉例說明：當偏移量是3的時候，解密時的密鑰就是3，所有的字母A將被替換成D，B變成E，以此類推。<br><br><div class="img"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png"/></div><br>使用時，加密者查找明文字母表中需要加密的消息中的每一個字母所在位置，並且寫下密文字母表中對應的字母。需要解密的人則根據事先已知的密鑰反過來操作，就得到原來的明文。</li>
+   舉例說明：當偏移量是3的時候，解密時的密鑰就是3，所有的字母A將被替換成D，B變成E，以此類推。<br><br><div class="img"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png" draggable="false" alt="（IMG-加密法示例）"></div><br>使用時，加密者查找明文字母表中需要加密的消息中的每一個字母所在位置，並且寫下密文字母表中對應的字母。需要解密的人則根據事先已知的密鑰反過來操作，就得到原來的明文。</li>
    
-  </ul>
+  </ul></u>
 </p>
-
-    <p>
-    &emsp;
-<B>2.<Font size=3>&ensp;<a href="https://aikawa0617.medium.com/%E5%AF%86%E7%A2%BC%E5%AD%B8-%E4%B8%80-%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A2%BC%E5%AD%B8-455e43038241">Medium</a> :(最後瀏覽日期2024/7/11) </Font></B>
-   <br>
+<br>
+    <p><li>
+    
+<B><Font size=3><a href="https://aikawa0617.medium.com/%E5%AF%86%E7%A2%BC%E5%AD%B8-%E4%B8%80-%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A2%BC%E5%AD%B8-455e43038241">Medium</a> :(最後瀏覽日期2024/7/11) </Font></B></li><br>
+  <u>
    <ul>
        
    <li>位移加密法非常容易破解，而且在實際應用中也無法保證通信安全。只須直接暴力破解或使用頻率分析。<br><br>
-   <div class="img"><img class="img2" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zK4B996B8q2hsiKG.png"/></div><br>
+   <div class="img"><img class="img2" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zK4B996B8q2hsiKG.png" draggable="false" alt="（IMG-頻率分析示例）"></div><br>
    當密文長度夠大的情況下，分析密文中每個字母出現的頻率，然後將這一頻率與正常情況下的該語言字母表中所有字母的出現頻率做比較， 分析密文字母出現的頻率，可以估計出正確的偏移量。</li>
-   
-  </ul>
+   </u>
+  </ul></ol>
 </p>
+<br>
+
 
 <div class="underline"></div>
 <h3> &nbsp;位移加密法 所涉及的ICT相關理論:</h3>
 
 <p>
-    &emsp;
-<B><Font size=3>&ensp;字符編碼 ASCII</Font>:</B>
+    <ol><li>
+<B><Font size=3>&ensp;字符編碼-ASCII</Font>:</B></li>
    <br>
    <ul>
-   <li>位移加密法在進行加密中，會先將英文字母轉換成美國標準資訊交換碼ASCII，</li>
-  </ul>
-    &emsp;
-  <B><Font size=3>&ensp;數據加密</Font>:</B>
+   <li><u>位移加密法在進行加密中，會先將英文字母轉換成美國標準資訊交換碼ASCII，然後按照固定數目偏移成為密文。
+   <br><br>例如A的ASCII是65，偏移量為3，將會變成68，英文字母E 。</u></li>
+  </ul><br>
+  
+    <li>
+  <B><Font size=3>&ensp;數據加密</Font>:</B></li>
    <br>
    <ul>
-   <li></li>
-  </ul>
-  
-  
+   <li><u>加密是網路安全的基本構成要素之一，可保護資料免於遭竊、變更或遭到入侵。<br><br>將資料拌碼為密鑰，只能使用專屬數位金鑰解鎖。無論是在電腦中的靜態資料、傳輸中的資料，或是處理中的資料，不論這些電腦位於地端部署環境或遠端雲端伺服器，已加密的資料都能受到保護。</u></li>
+  </ul></ol>
 </p>
+<br>
 
 
+<div class="underline-P"></div>
+<h3> &nbsp;位移加密法 解密器 初步構思:</h3>
+
+<p>
+    <ol>
+<li><B><Font size=3>&ensp;假設原文内包含大寫字母、空白字符及標點符號需注意</Font>:</B></li>
+   <br>
+   <ul>
+       
+   <li>那麼只需要處理大寫字母、空白字符及標點符號，而不須理會小寫字母，考慮的ASCII字符編碼由65至91，其他則忽略。</li>
+   </u>
+  </ul>
+   
+ <li><B><Font size=3>temp</Font>:</B></li>
+   <br>
+   <ul>
+   <u>
+   <li>text</li>
+   </u>
+  </ul>
+</p>
 
 
 
