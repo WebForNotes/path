@@ -2,22 +2,47 @@
     <HTML lang=zh-hant >
     <HEAD>
     <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0  user-scalable=0"/>
     <meta name="keyword"content="Note,HKDSE ">
-    <meta name="google-site-verification" content="xYLvwYuMoiTUtgAOPLDiLqSVdqwEN1CRaJDk9pdck5o" /> <!--Google search console-->
+    <meta data-rh="true" name="description"content="Make in Hong Kong！ 分享筆記與DSE資料。"/> 
+    <meta name="robots"content="index,notranslate,nofollow">  
+    <!--Google search console-->
+    <meta name="google-site-verification" content="xYLvwYuMoiTUtgAOPLDiLqSVdqwEN1CRaJDk9pdck5o" /> 
     <!-- CSP -->
     <meta http-equiv="Content-Security-Policy" content="
     default-src *;
-    img-src 'self' data: ; 
+    img-src 'self' *; 
     script-src 'self' ;
     style-src  'self' 'unsafe-inline' ;
     object-src 'none' ; 
-    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    require-trusted-types-for 'script'; "/> <!--Img JS CSS-->
     <!-- /CSP -->
+        
+    <meta name="robots" content="noodp,noydir" />
+        
     <TITLE>WebForNotes - HKDSE筆記分享</TITLE>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
+        
+        <!--icon item-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" sizes="48x48" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" sizes="48x48" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">      
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <!--author-->
+    <meta name="author" content="Mr.Cheng">
+    <link type="text/plain" rel="author" href="http://WebForNotes.github.io/humans.txt"/> 
     </HEAD>
 <style>
+        
+html{
+overflow-y:hidden;
+}
+   
 Button{
     border:2px solid green;
     background-color:yellow;
@@ -29,22 +54,29 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height:100vh;} 
-div{
+div.string{
     border:1px solid purple;
     Background-color:#A4A18F;
 } 
+div.img{
+text-align:center;
+}
 </style>
    <BODY>
-       <h3>此網頁為索引文件，按此進入主頁：</h3>
+       <h3>索引文件 - 下方進入主頁：</h3>
        
-       <div>
+       <div class="string">
        &emsp;<br>
-       <B>&emsp;<a href="https://webfornotes.github.io/path/home.html" ><button><font color="red">桌面版</font></button></a> - 此網頁畫面較大（優先更新）
+       <B>&emsp;<a href="https://webfornotes.github.io/path/home.html" ><button><font color=#8B0000><B>桌面版</B></font></button></a> -- 畫面較大，優先更新
        <br><br>
-       &emsp;<a href="https://webfornotes.github.io/path/PH.html" ><button><font color="red">手機版</font></button></a> - 此網頁對手機用會較友善
+       &emsp;<a href="https://webfornotes.github.io/path/PH.html" ><button><font color=#9A2E2E><B>手機版</B></font></button></a> -- 對手機用戶較友善
+       <br><br>
+       &emsp;<a href="https://webfornotes.github.io/path/university.html" ><button><font color=#000000><B>升學專區</B></font></button></a> -- 構成中...
        </B><br>
        &emsp;
        </div>
+       <br><br>
+       <div class="img"><img src="https://webfornotes.github.io/index-css.png" draggable="false"/></div>
    </BODY>
    
     
