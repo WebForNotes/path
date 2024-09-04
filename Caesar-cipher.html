@@ -123,20 +123,58 @@ border:1.1px solid purple;}
 <li><B><Font size=3>&ensp;假設原文内包含大寫字母、空白字符及標點符號需注意</Font>:</B></li>
    <br>
    <ul>
-       
+   <u>
    <li>那麼只需要處理大寫字母、空白字符及標點符號，而不須理會小寫字母，考慮的ASCII字符編碼由65至91，其他則忽略。</li>
    </u>
   </ul>
-   
- <li><B><Font size=3>temp</Font>:</B></li>
+   <br>
+ <li><B><Font size=3>&ensp;加密過程中空白字元及標點符號不變,需要處理的事項</Font>:</B></li>
    <br>
    <ul>
    <u>
-   <li>text</li>
+   <li>設計程式只考慮的ASCII字符編碼由65至91，其他ASCII字符編碼則忽略,空白字元和標點符號就不變了。</li>
    </u>
   </ul>
+  <br>
+   <li><B><Font size=3>&ensp;在不需知道位移量的情況下,位移加密器解密器可以破解密文,原文最常出現的字母應該為E,我們可以在不知道位移量的情況下解決以上難題</Font>:</B></li>
+   <br>
+   <ul>
+   <u>
+   <li>用for循環找出密文之中每個字母的出現量,選取出現最高頻率的字量,佔算得出位移量再重新移位就可以破解密文。</li>
+   </u>
+  </ul></ol>
 </p>
+<br>
+<div class="underline-P"></div>
 
+<h3> &nbsp;位移加密法 解密器 訂定算法框架:</h3>
 
+<p>
+    <ol>
+<li><B><Font size=3>&ensp;title</Font>:</B></li>
+   <br>
+   <ul>
+   <u>
+   <li>word</li>
+   </u>
+  </ul>
+   <br>
+ <li><B><Font size=3>&ensp;title</Font>:</B></li>
+   <br>
+   <ul>
+   <u>
+   <li>word</li>
+   </u>
+  </ul>
+  <br>
+   <li><B><Font size=3>&ensp;title</Font>:</B></li>
+   <br>
+   <ul>
+   <u>
+   <li>word</li>
+   </u>
+  </ul></ol>
+</p>
+<br>
 
 </div>
