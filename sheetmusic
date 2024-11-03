@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <HTML lang=zh-hant >
+    <HEAD>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
+    <meta name="keyword"content="Note,HKDSE ">
+    <!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *;
+    img-src 'self' data: ; 
+    script-src 'self' ;
+    style-src  'self' 'unsafe-inline' ;
+    object-src 'none' ; 
+    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    <!-- /CSP -->
+    <TITLE>WebForNotes</TITLE>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
+    
+
+    </HEAD>
+
+<style>
+body {
+    Background-color:#9f8da3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+div{
+    border:2px solid green;
+    Background-color:#A4A18F;
+} 
+</style>
+
+<font size=5>sheetmusic </font>- <font size=2><a href="https://webfornotes.github.io">(按此從回索引頁面) </a></font><br><br>
+
+<div class="string">&emsp;<p>
+    &emsp;
+<B><Font size=3>&ensp;Song:</Font></B>
+   <br>Devil - clarinet quinet 1st 2nd 3rd 4th Bass clarinet
+   <br>(No roots In four-part harmony)<br>
+   <audio controls>
+  <source src="https://webfornotes.github.io/path/files/school/sheetmusic/Devil-MIDI-mp3.mp3" type="audio/mpeg">
+   </audio><BR>
+   殘櫻落葉 (old cherry blossom tree) - Soprano-Recorder and classical guitar 
+   <audio controls>
+  <source src="https://webfornotes.github.io/path/files/school/sheetmusic/old-cherry-blossom-tree-MIDI-mp3.mp3" type="audio/mpeg">
+   </audio><BR>
+   Thundershowers - piano solo
+   <audio controls>
+  <source src="https://webfornotes.github.io/path/files/school/sheetmusic/Thundershowers-MIDI-mp3.mp3" type="audio/mpeg">
+   </audio><BR>
+   
+</p><br>
+        </div>
