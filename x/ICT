@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <HTML lang=zh-hant >
+    <HEAD>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
+    <meta name="keyword"content="Note,HKDSE ">
+    <!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *;
+    img-src 'self' data: ; 
+    script-src 'self' ;
+    style-src  'self' 'unsafe-inline' ;
+    object-src 'none' ; 
+    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    <!-- /CSP -->
+    <TITLE>WebForNotes - HKDSE筆記分享</TITLE>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
+    
+
+    </HEAD>
+
+<style>
+body {
+    Background-color:#9f8da3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+div{
+    border:2px solid green;
+    Background-color:#A4A18F;
+} 
+</style>
+
+<font size=5>ICT </font>- <font size=2><a href="https://webfornotes.github.io">(按此從回索引頁面) </a></font><br><br>
+
+<div class="string">&emsp;<p>
+    &emsp;
+<B><Font size=3>&ensp;應用程式:</Font></B>
+   <br>
+   <ul>
+   <li><a href="https://code.visualstudio.com/"> Visual Studio code</a></li>
+   <li><a href="https://thonny.org/">Thonny</a> --- (.py)</li> 
+   <li><a href="https://visualstudio.microsoft.com/zh-hant/#vs-section"> Visual Studio </a></li>
+   </ul>
+   <br>&ensp;&ensp;
+   <B><Font size=3>&ensp;實用網站:</Font></B>
+   <br>
+   <ul>
+   <li><a href="https://www.w3schools.com/">W3Schools</a> --- (多語言)</li>
+   <li><a href="https://developer.mozilla.org/en-US/">MDN  Web Docs</a> --- (HTML,Css,Javascript)</li> 
+   <li><a href="https://github.com/">Github</a>  --- Git版本庫寄存</li>
+   </ul>
+   <br>
+   <B><Font size=3>&emsp;&ensp; youtube推介：</Font></B>
+   <ul>
+   <li><a href="https://youtube.com/playlist?list=PLDcr_BPQMb9RHjc4Jk-tDAEMKcmf9E_PW&si=Xtxbdcj86I6O4Zb4"> road to 2023舊制內容 </a><BR></li>
+   </ul>
+   <br>
+   <B><Font size=3>&emsp;&ensp; 筆記：</Font></B>
+   <ul>
+   <li><a href="https://drive.google.com/drive/folders/1N7xNJJFuuhTHzNCe_OdQRBpUlBcxmjaU">google drive</a>
+   
+   </ul>
+   
+</p><br>
+        </div>
