@@ -14,8 +14,10 @@
     style-src  'self' 'unsafe-inline' ;
     object-src 'none' ; 
     require-trusted-types-for 'script'; 
-    frame-ancestors 'self' https://www.study-together.com/edu/dseecon/compulsory/ ; ">
+    frame-ancestors 'self'; ">
     <!-- IMG(only for base64) JS CSS-->
+    <meta name="referrer" content="no-referrer">
+    <link rel="noopener noreferrer">
     <!-- /CSP -->
     <TITLE>WebForNotes - HKDSE筆記分享</TITLE>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
@@ -30,7 +32,21 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height:100vh;
+    Position:relatative;
 }
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,0.8);
+    z-index: 9999; 
+    display: none;  
+    text-align: center;
+    font-size: 24px;
+    line-height: 100vh; 
+        }    
 summary{
     Background-color:#CE8181;
 }
@@ -82,6 +98,7 @@ summary.links{
 </style>
 
 <BODY>
+    <div class="overlay" id="overlay"> This page cannot be loaded in the frame.<br>此頁面不能在框架中加載。<br>此页面不能在框架中加载。</div>
     <h2>WebForNotes - HKDSE筆記分享<font size=2><a href="https://webfornotes.github.io">(按此從回索引頁面) </a></font></h1>
     <details>
         <summary class="Informations">
@@ -150,7 +167,7 @@ summary.links{
            </tr>
            <tr>
                 <ul><th scope="row"class="thclass"><li><span><a href="https://webfornotes.github.io/path/main/government.html" Title="公民與社會發展科"> 公民與社會發展科</a></span></li></th></ul>
-                <ul><td><li><a herf="https://webfornotes.github.io/path/x/eco.html">ECO經濟</a></li></td></ul>
+                <ul><td><li><a href="https://webfornotes.github.io/path/x/eco.html">ECO經濟</a></li></td></ul>
                 <td></td>
            </tr>
            
