@@ -15,11 +15,15 @@
     script-src 'self' ;
     style-src  'self' 'unsafe-inline' ;
     object-src 'none' ; 
-    require-trusted-types-for 'script'; "/> <!--Img JS CSS-->
+    require-trusted-types-for 'script'; 
+    frame-ancestors 'self';"/> <!--Img JS CSS-->
+    <meta name="referrer" content="no-referrer">
+    <link rel="noopener noreferrer">
     <!-- /CSP -->
         
     <meta name="robots" content="noodp,noydir" />
-        
+    <meta name="referrer" content="no-referrer">
+    <link rel="noopener noreferrer">    
     <TITLE>WebForNotes - HKDSE筆記分享</TITLE>
         
         <!--icon item-->
@@ -41,11 +45,30 @@
         
 html{
 overflow-y:hidden;
+height: 100%;
 }
-   
-Button{
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,0.8);
+    z-index: 9999; 
+    display: none;  
+    text-align: center;
+    font-size: 24px;
+    line-height: 100vh; 
+        }    
+    
+Button.y{
     border:2px solid green;
     background-color:yellow;
+}
+
+Button.w{
+    border:2px solid green;
+    background-color: white;
 }
 
 body {
@@ -54,29 +77,62 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height:100vh;} 
+    
+    
 div.string{
     border:1px solid purple;
     Background-color:#A4A18F;
+} 
+div.string1{
+    border:1px solid purple;
+    Background-color:#A4A18F;
+    text-align:center;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    left:0;
 } 
 div.img{
 text-align:center;
 }
 </style>
    <BODY>
-       <h3>索引文件 - 下方進入主頁：</h3>
+       <div class="overlay" id="overlay"> This page cannot be loaded in the frame.<br>此頁面不能在框架中加載。<br>此页面不能在框架中加载。</div>
+       <div>
+       <h3>索引 -- 下方進入主頁：</h3>
        
        <div class="string">
        &emsp;<br>
-       <B>&emsp;<a href="https://webfornotes.github.io/path/home.html" ><button><font color=#8B0000><B>桌面版</B></font></button></a> -- 畫面較大，優先更新
+       <B>&emsp;<a href="https://webfornotes.github.io/path/home.html" ><button class="y"><font color=#8B0000><B>桌面版</B></font></button></a> 
        <br><br>
-       &emsp;<a href="https://webfornotes.github.io/path/PH.html" ><button><font color=#9A2E2E><B>手機版</B></font></button></a> -- 對手機用戶較友善
+       &emsp;<a href="https://webfornotes.github.io/path/PH.html" ><button class="y"><font color=#9A2E2E><B>手機版</B></font></button></a> 
        <br><br>
-       &emsp;<a href="https://webfornotes.github.io/path/university.html" ><button><font color=#000000><B>升學專區</B></font></button></a> -- 基本升學資料
+       &emsp;<a href="https://webfornotes.github.io/path/university.html" ><button class="y"><font color=#000000><B>升學專區</B></font></button></a> 
        </B><br>
-       &emsp;
+       <br>
+       &emsp;<a href="https://webfornotes.github.io/path/dse-you-should-konw.html" ><button class="y"><font color=#000000><B>DSE考生須知</B></font></button></a> 
+       </B><br>
+      &emsp;
        </div>
-       <br><br>
+       <br><br><br>
+
+
+           
        <div class="img"><img src="https://webfornotes.github.io/index-css.png" draggable="false"/></div>
+
+
+           
+       <div class="string1">
+       <B>
+       &emsp;<br>
+       &emsp;-- <a href="https://webfornotes.github.io/path/sheetmusic.html" ><button class="w"><font color=#8B0000><B>樂譜 Score</B></font></button></a> -- </B>
+       <br>
+     <font size="1" >© Crisys 2024-2025 &emsp; 
+      Contact : webfornotes@outlook.com</font>
+       </div>
+       
+      
+    
    </BODY>
    
     
