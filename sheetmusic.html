@@ -18,6 +18,8 @@
     require-trusted-types-for 'script'; 
     frame-ancestors 'self';"> <!-- IMG(only for base64) JS CSS-->
     <!-- /CSP -->
+    <meta name="referrer" content="no-referrer">
+    <link rel="noopener noreferrer">
     <TITLE>WebForNotes-Score</TITLE>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
     
@@ -32,6 +34,19 @@ body {
     background-attachment: fixed;
     height:100vh;
 }
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,0.8);
+    z-index: 9999; 
+    display: none;  
+    text-align: center;
+    font-size: 24px;
+    line-height: 100vh; 
+        }    
 div{
     border:2px solid green;
     Background-color:#A4A18F;
@@ -42,7 +57,8 @@ border:2px solid black;}
 summary.y{background-color: yellow;}
 summary.g{background-color: green;}
 </style>
- 
+<body>
+    <div class="overlay" id="overlay"> This page cannot be loaded in the frame.<br>此頁面不能在框架中加載。<br>此页面不能在框架中加载。</div>
 <b><font size=5>Webfornotes-樂譜網站<br>Score Website</font></b> <br><br>
 <details>
     <summary class="r">
@@ -161,3 +177,4 @@ Please note that the music is currently only released on YouTube and Bilibili<br
 
    </p><br>
 </div>
+</body>
