@@ -13,6 +13,8 @@
     object-src 'none' ; 
     require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
     <!-- /CSP -->
+    <meta name="referrer" content="no-referrer">
+    <link rel="noopener noreferrer">
     <TITLE>WebForNotes - HKDSE筆記分享</TITLE>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATFmPAEyPTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAREAABEQAAABERERABEAAAAREAAiAQAAABERECIBAAAAABEREREAAAAAARAAAAAAAAAAAAAAAAA3/wAAN/4AADP+AAA5/AAAPfkAADHzAAAX9wAAV/cAAFAHAAAPEwAAAMMAAAcnAACBJwAAsAcAANkPAADgfwAA"/>
     
@@ -31,15 +33,29 @@ div{
     border:2px solid green;
     Background-color:#A4A18F;
 } 
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,0.8);
+    z-index: 9999; 
+    display: none;  
+    text-align: center;
+    font-size: 24px;
+    line-height: 100vh; 
+        }    
 </style>
-
+<body>
+    <div class="overlay" id="overlay"> This page cannot be loaded in the frame.<br>此頁面不能在框架中加載。<br>此页面不能在框架中加载。</div>
 <font size=4>習近平在二十大的重要講話（提高國家文化軟實力）</font><br>
 <font size=2><a href="https://webfornotes.github.io">(按此從回索引頁面) </a></font><br><br>
 
 <div class="string"><p>
     &emsp;&emsp;習近平總書記在二十大的重要講話中，<B>強調必須推進文化自信自强，建設社會主義文化強國，不斷提升國家文化軟實力和中華文化影響力，講好中國故事，傳播好中國聲音，展現可信、可愛、可敬的中國形象。</B>
     
-    
+</div></body>
     
     
     
