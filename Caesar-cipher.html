@@ -5,7 +5,19 @@
     <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
     <meta name="keyword"content="">
     <meta name="robots"content="notranslate,noodp,noindex">
-
+<!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *;
+    img-src 'self' data: 
+    https://webfornotes.github.io/index-css.png 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png 
+    https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zK4B996B8q2hsiKG.png  
+    https://webfornotes.github.io/path/files/school/ictsba/sba-flowchart.jpg  ; 
+    script-src 'self' ;
+    style-src  'self' 'unsafe-inline' ;
+    object-src 'none' ;
+    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    <!-- /CSP -->
     require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
     <!-- /CSP -->
     <TITLE>ICT-SBA 位移加密法</TITLE>
