@@ -2,12 +2,12 @@
     <HTML lang=zh-hant >
     <HEAD>
     <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0  user-scalable=0"/>
     <meta name="keyword"content="Note,HKDSE ">
     <!-- CSP -->
     <meta http-equiv="Content-Security-Policy" content="
     default-src *;
-    img-src 'self' data: ; 
+    img-src https://webfornotes.github.io/index-css.png 'self' data: ; 
     script-src 'self' ;
     style-src  'self' 'unsafe-inline' ;
     object-src 'none' ; 
@@ -32,8 +32,26 @@ body {
 div{
     border:2px solid green;
     Background-color:#A4A18F;
-} 
- .overlay {
+}
+
+summary{
+    display:block;
+    Background-color:Gray;
+    border:1px solid purple;
+}
+div.information{
+    background-color:#C1ACC6;
+    border:1px solid purple;   background-image:url(https://webfornotes.github.io/index-css.png);
+Background-repeat:no-repeat;
+Background-position:center;
+}
+
+div.information2{
+    background-color:#C1ACC6;
+    border:1px solid purple;
+}
+
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -46,43 +64,180 @@ div{
     font-size: 24px;
     line-height: 100vh; 
         }    
+div.string1{
+    border:1px solid purple;
+    Background-color:#A4A18F;
+    text-align:center;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    left:0;
+} 
 </style>
 <body>
     <div class="overlay" id="overlay"> This page cannot be loaded in the frame.<br>此頁面不能在框架中加載。<br>此页面不能在框架中加载。</div>
-<font size=5>中文 </font>- <font size=2><a href="https://webfornotes.github.io">(按此從回索引頁面) </a></font><br><br>
+<font size=5>中文 </font>- <font size=2><a href="https://webfornotes.github.io">(按此從回索引頁面)</a> &emsp;
+<font size=2><a href="mailto:WebForNotes@outlook.com?subject=失效/報錯&body=網站管理員你好，我發現了bugs，請修正：（請以文字或截圖描述情况，在此作為網站管理員感謝你告訴我們這個問題。）
+"Title=email"">(失效/報錯) </a></font><br><br>
 
-<div class="string">&emsp;<p>
-    &emsp;
-<B><Font size=3>&ensp;必温内容:</Font></B>
-   <br>
+<div class="string">
+<p>
+    
    <ul>
-   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/nss-lang/Set_text_12.pdf">十二篇範文</a><BR></li>
-   <li><a href="https://www.edb.gov.hk/tc/curriculum-development/kla/chi-edu/nss-lang/settext-text.html">誦讀錄音</a></li>
-   <li><a href="https://www.edb.gov.hk/tc/curriculum-development/kla/chi-edu/nss-lang/settext-reference.html">十二範-全文賞析</a> &emsp;*內有注釋必溫</li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/nss-lang/Set_text_12.pdf">十二篇範文(PDF)</a> <font size="1">* 教育局提供材料</font><br></li>
+   </ul>
+   
+   <details>
+    <summary><B><Font size=3>&emsp;&ensp;十二篇範文全文賞析：</Font></B></summary><br>
+   <div class="information">
+       <font size="1">* 教育局提供材料</font>
+   <ul>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_03.pdf">論仁、論考、論君子</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_04.pdf">魚我所欲也</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_05.pdf">逍遙遊</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_06.pdf">勸學</a></li>   
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_08.pdf">廉頗論相如列傳</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_09.pdf">出師表</a></li>  
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_12.pdf">師說</a></li>   
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_13.pdf">始得西山宴遊記</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_14.pdf">岳陽樓記</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_15.pdf">六國論</a></li><br>
+   唐詩三首：
+   <ul>
+       <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_16a.pdf">山居秋暝</a></li>
+       <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_16b.pdf">月下獨酌</a></li>
+       <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_16c.pdf">登樓</a></li>
    </ul>
    <br>
-   <B><Font size=3>&emsp;&ensp; youtube推介：</Font></B>
-   <ul>
-   <li><a href="https://www.youtube.com/@nongworkshop/videos">濃老師教室(home)</a><BR></li>
-   <li><a href="https://www.youtube.com/playlist?list=PLcDPlHGQzt9O4QNBNFTjzQsVwhChhGNWu">十二篇範文</a> 
-   <li><a href="https://www.youtube.com/playlist?list=PLcDPlHGQzt9OHgjApMDk2M2x-qqv2vQvq">卷一</a>
-   <li><a href="https://www.youtube.com/playlist?list=PLcDPlHGQzt9PTcK69leRgMByFmAz00_8U">卷二作文</a><br>/<br>
-   <li><a href="https://youtu.be/3oSmH4ktKyg?si=q5ne3tUq_hiryImI">評論</a>
+   詞三首：
+        <ul>
+        <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_17a.pdf">念奴嬌·赤壁懷古</a></li>
+        <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_17b.pdf">聲聲慢·秋情</a></li>
+        <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/KS4_17c.pdf">青元案·元夕</a></li>
+        </ul>
    </ul>
+   </div>
+   </details>
+   <br>
+   
+   
+   <details>
+    <summary><B><Font size=3>&emsp;&ensp;誦讀錄音(MP3)：</Font></B></summary><br>
+   <div class="information">
+       <font size="1">* 教育局提供材料</font>
+   <ul>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_03_c.mp3">論仁、論考、論君子</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_04_c.mp3">魚我所欲也</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_05_c.mp3">逍遙遊</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_06_c.mp3">勸學</a></li>   
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_08_c.mp3">廉頗論相如列傳</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_09_c.mp3">出師表</a></li>  
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_12_c.mp3">師說</a></li>   
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_13_c.mp3">始得西山宴遊記</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_14_c.mp3">岳陽樓記</a></li>
+   <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_15_c.mp3">六國論</a></li><br>
+   唐詩三首：
+   <ul>
+       <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_16a_c.mp3">山居秋暝</a></li>
+       <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_16b_c.mp3">月下獨酌</a></li>
+       <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_16c_c.mp3">登樓</a></li>
+   </ul>
+   <br>
+   詞三首：
+        <ul>
+        <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_17a_c1.mp3">念奴嬌·赤壁懷古</a></li>
+        <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_17b_c.mp3">聲聲慢·秋情</a></li>
+        <li><a href="https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/recommended-passages/ks4_17c_c.mp3">青元案·元夕</a></li>
+        </ul>
+   </ul>
+   </div>
+   </details>
+   <br>
+    
+   
+  <details>
+  <summary><B><Font size=3>&emsp;&ensp;十二篇指定篇章(Afterschool)：</Font></B></summary><br>
+   <div class="information">
+   <ul>
+   <li><a href="https://afterschool.com.hk/blog/376-dse-%E4%B8%AD%E6%96%87-%E8%AB%96%E4%BB%81%E8%AB%96%E5%AD%9D%E8%AB%96%E5%90%9B%E5%AD%90-%E8%AA%9E%E8%AD%AF/">論仁、論考、論君子</a></li>
+   <li><a href="https://afterschool.com.hk/blog/377-dse-%E4%B8%AD%E6%96%87-%E9%AD%9A%E6%88%91%E6%89%80%E6%AC%B2%E4%B9%9F-%E8%AA%9E%E8%AD%AF/">魚我所欲也</a></li>
+   <li><a href="https://afterschool.com.hk/blog/374-dse-%E4%B8%AD%E6%96%87-%E9%80%8D%E9%81%99%E9%81%8A-%E8%AA%9E%E8%AD%AF/">逍遙遊</a></li>
+   <li><a href="https://afterschool.com.hk/blog/375-dse-%E4%B8%AD%E6%96%87-%E5%8B%B8%E5%AD%B8-%E8%AA%9E%E8%AD%AF/">勸學</a></li>   
+   <li><a href="https://afterschool.com.hk/blog/368-dse-%E4%B8%AD%E6%96%87-%E5%BB%89%E9%A0%97%E8%97%BA%E7%9B%B8%E5%A6%82%E5%88%97%E5%82%B3-%E8%AA%9E%E8%AD%AF/">廉頗論相如列傳</a></li>
+   <li><a href="https://afterschool.com.hk/blog/349-dse-%E4%B8%AD%E6%96%87-%E5%87%BA%E5%B8%AB%E8%A1%A8-%E8%AA%9E%E8%AD%AF/">出師表</a></li>  
+   <li><a href="https://afterschool.com.hk/blog/373-dse-%E4%B8%AD%E6%96%87-%E5%B8%AB%E8%AA%AA-%E8%AA%9E%E8%AD%AF/">師說</a><BR></li>   
+   <li><a href="https://afterschool.com.hk/blog/351-dse-%E4%B8%AD%E6%96%87-%E5%A7%8B%E5%BE%97%E8%A5%BF%E5%B1%B1%E5%AE%B4%E9%81%8A%E8%A8%98-%E8%AA%9E%E8%AD%AF/">始得西山宴遊記</a></li>
+   <li><a href="https://afterschool.com.hk/blog/312-dse-%E4%B8%AD%E6%96%87-%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98-%E8%AA%9E%E8%AD%AF/">岳陽樓記</a></li>
+   <li><a href="https://afterschool.com.hk/blog/340-dse-%E4%B8%AD%E6%96%87-%E5%85%AD%E5%9C%8B%E8%AB%96-%E8%AA%9E%E8%AD%AF/">六國論</a></li><br>
+   唐詩三首：
+   <ul>
+       <li><a href="https://afterschool.com.hk/blog/321-dse-%E4%B8%AD%E6%96%87-%E5%B1%B1%E5%B1%85%E7%A7%8B%E6%9A%9D-%E8%AA%9E%E8%AD%AF/">山居秋暝</a></li>
+       <li><a href="https://afterschool.com.hk/blog/326-dse-%E4%B8%AD%E6%96%87-%E6%9C%88%E4%B8%8B%E7%8D%A8%E9%85%8C-%E8%AA%9E%E8%AD%AF/">月下獨酌</a></li>
+       <li><a href="https://afterschool.com.hk/blog/332-dse-%E4%B8%AD%E6%96%87-%E7%99%BB%E6%A8%93-%E8%AA%9E%E8%AD%AF/">登樓</a></li>
+   </ul>
+   <br>
+   詞三首：
+        <ul>
+        <li><a href="https://afterschool.com.hk/blog/336-dse-%E4%B8%AD%E6%96%87-%E5%BF%B5%E5%A5%B4%E5%AC%8C-%E8%B5%A4%E5%A3%81%E6%87%B7%E5%8F%A4-%E8%AA%9E%E8%AD%AF/">念奴嬌·赤壁懷古</a></li>
+        <li><a href="https://afterschool.com.hk/blog/371-dse-%E4%B8%AD%E6%96%87-%E8%81%B2%E8%81%B2%E6%85%A2%E7%A7%8B%E6%83%85-%E8%AA%9E%E8%AD%AF/">聲聲慢·秋情</a></li>
+        <li><a href="https://afterschool.com.hk/blog/372-dse-%E4%B8%AD%E6%96%87-%E9%9D%92%E7%8E%89%E6%A1%88%E5%85%83%E5%A4%95-%E8%AA%9E%E8%AD%AF/"></a>青元案·元夕</li>
+        </ul>
+   </ul>
+   </div>
+   </details>
+   
+   
+   
+   
+   
+   <br>
+   <details>
+   <summary>
+   <B><Font size=3>&emsp;&ensp; 教學視頻推介：</Font></B></summary>
+   <div class="information2">
+   <ul>
+   <li><a href="https://www.youtube.com/@nongworkshop/videos">濃老師教室(YouTube 頻道)</a><BR></li>
+   <li><a href="https://www.youtube.com/playlist?list=PLcDPlHGQzt9O4QNBNFTjzQsVwhChhGNWu">十二篇範文(YouTube 播放清單)</a> </li>
+   <li><a href="https://www.youtube.com/playlist?list=PLcDPlHGQzt9OHgjApMDk2M2x-qqv2vQvq">卷一(YouTube 播放清單)</a></li>
+   <li><a href="https://www.youtube.com/playlist?list=PLcDPlHGQzt9PTcK69leRgMByFmAz00_8U">卷二作文(YouTube 播放清單)</a></li>
+   <li><a href="https://youtu.be/3oSmH4ktKyg?si=q5ne3tUq_hiryImI">評論(YouTube 影片)</a></li>
+   </ul>
+   </div>
+   </details>
+  
+  
+  
+   
+   
+   
     <br>
    <B><Font size=3>&emsp;&ensp; 小測：</Font></B>
    <ul>
-   <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8GSGBR4eqj9GOC1skNhZ0XnQrRzR1MyzByDcQRsCc7-IGEQ/viewform?usp=sf_link">論仁論考論君子 (MC)</a>
-   <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8GSGBR4eqj9GOC1skNhZ0XnQrRzR1MyzByDcQRsCc7-IGEQ/viewform">論仁論考論君子(1) (MC)</a>
+   <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8GSGBR4eqj9GOC1skNhZ0XnQrRzR1MyzByDcQRsCc7-IGEQ/viewform?usp=sf_link">論仁論考論君子(1) (MC)(Google Form)</a></li>
+   <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8GSGBR4eqj9GOC1skNhZ0XnQrRzR1MyzByDcQRsCc7-IGEQ/viewform">論仁論考論君子(2)  (MC)(Google Form)</a></li>
    
    </ul>
+   
+   
+   
+   
+   
    <br>
    <B><Font size=3>&emsp;&ensp; 筆記：</Font></B>
    <ul>
-   <li><a href="https://drive.google.com/drive/folders/1M0PKHwSTrszcKeRMitxHo9KIbhWbwP6m">google drive</a>
+   <li><a href="https://drive.google.com/drive/mobile/folders/1M0PKHwSTrszcKeRMitxHo9KIbhWbwP6m/1IeZzwSg6NOgjEh0rSzpASPlIzjUpk0BK?sort=13&direction=a">出師表 - 臨急抱佛腳用溫習紙(google drive)</a></li>
    
    </ul>
    
 </p><br>
         </div>
+        
+      
+<div class="string1">
+<font size=1>* 本站並沒有儲存任何其他網站數據， 以上所有內容只提供連結前往。<br>
+© Crisys 2024-2025 &emsp; 
+Contact : webfornotes@outlook.com</font></div>
+        
 </body>
+
+
